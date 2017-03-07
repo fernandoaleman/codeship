@@ -11,7 +11,8 @@ puts "Redis"
 redis = Redis.new(host: "redis")
 puts "REDIS VERSION: #{redis.info["redis_version"]}"
 
-sleep 4
+sleep 20
+puts "Postgres"
 postgres_username = "postgres"
 postgres_password = ""
 test = PG.connect("postgres", 5432, "", "", "postgres", postgres_username, postgres_password)
